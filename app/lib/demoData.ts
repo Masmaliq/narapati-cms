@@ -29,12 +29,9 @@ export const demoArticleDetail: ArticleDetail = {
     "Kepastian regulasi menentukan kualitas investasi jangka panjang.",
     "Talenta, teknologi, dan tata kelola menjadi pembeda utama daya saing."
   ],
-  author: {
-    name: "Redaksi Narapati",
-    role: "Editorial Desk"
-  },
+  author: "Redaksi Narapati",
   body: [
-    {
+   
       _type: "block",
       style: "normal",
       children: [
