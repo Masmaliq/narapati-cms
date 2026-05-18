@@ -79,7 +79,11 @@ export default async function ArticlePage({ params }: Props) {
           <h1>{article.title}</h1>
           <p>{article.dek}</p>
           <div className="byline">
-            <strong>{typeof article.author === "object" ? article.author?.name : article.author || "Redaksi Narapati"}</strong>
+            <strong>
+  {typeof article.author === "object" && article.author !== null
+    ? article.author.name
+    : article.author || "Narapati"}
+</strong>
             <span>{article.publishedAt ? new Date(article.publishedAt).toLocaleDateString("id-ID", { dateStyle: "full" }) : "Senin, 20 Mei 2024"} • {article.readingTime || "8 menit baca"}</span>
           </div>
         </section>
