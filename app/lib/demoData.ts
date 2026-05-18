@@ -31,7 +31,7 @@ export const demoArticleDetail: ArticleDetail = {
   ],
   author: "Redaksi Narapati",
   body: [
-   
+   {
       _type: "block",
       style: "normal",
       children: [
